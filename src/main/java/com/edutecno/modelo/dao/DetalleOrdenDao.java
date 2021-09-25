@@ -2,36 +2,36 @@ package com.edutecno.modelo.dao;
 
 import java.util.List;
 
-import com.eductecno.modelo.dto.ClienteDto;
+import com.eductecno.modelo.dto.DetalleOrdenDto;
 
-public class DetalleOrdenDao implements Dao {
+public class DetalleOrdenDao implements Dao<DetalleOrdenDto, String> {
 
 	@Override
-	public List<ClienteDto> listarClientes() {
+	public List<DetalleOrdenDto> listar() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public ClienteDto buscarPorId(String id) {
+	public DetalleOrdenDto buscarPorId(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int insert(ClienteDto cliente) {
+	public int insert(DetalleOrdenDto Objeto) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int update(ClienteDto cliente) {
+	public int update(DetalleOrdenDto Objeto) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int delete(ClienteDto cliente) {
+	public int delete(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

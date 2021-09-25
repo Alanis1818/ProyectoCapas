@@ -1,14 +1,16 @@
 package com.edutecno.modelo.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.eductecno.modelo.dto.ClienteDto;
 
-public class ClienteDao implements Dao {
+public class ClienteDao implements Dao<ClienteDto, String> {// String es el tipo del ID
 
 	@Override
-	public List<ClienteDto> listarClientes() {
+	public List<ClienteDto> listar() {
 		// TODO Auto-generated method stub
+		List<ClienteDto> clientes = new ArrayList<ClienteDto>();
 		return null;
 	}
 
@@ -19,19 +21,19 @@ public class ClienteDao implements Dao {
 	}
 
 	@Override
-	public int insert(ClienteDto cliente) {
+	public int insert(ClienteDto Objeto) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int update(ClienteDto cliente) {
+	public int update(ClienteDto Objeto) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int delete(ClienteDto cliente) {
+	public int delete(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
